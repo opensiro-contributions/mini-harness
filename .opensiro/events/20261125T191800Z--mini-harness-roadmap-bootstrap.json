@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "20261125T191800Z--mini-harness-roadmap-bootstrap",
+  "recorded_at": "2026-11-25T19:18:00Z",
+  "actor": "OpenSiro AI roadmap executor",
+  "kind": "DECISION",
+  "decision": "Initial restrictive metadata bootstrap; proposal GO + NEEDS_EVIDENCE",
+  "case_id": "worktree-commitment-control-s3-20261125",
+  "evidence_urls": [
+    "https://github.com/opensiro/upstream/blob/55e2ca7bc27b1f202bc0be97e922ebb875f81056/PROTOCOL.md",
+    "https://github.com/dmoka/mini-harness/tree/4563935c87c4e22514a6ee3842fc51cf34ebe2fb"
+  ],
+  "next_action": "Owner review and RESUME before further effects; no publication consent"
+}
