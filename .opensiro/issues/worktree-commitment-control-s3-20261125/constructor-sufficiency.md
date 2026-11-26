@@ -34,7 +34,7 @@ Human [issue.md](issue.md); canonical [roadmap.md](roadmap.md). PLAN_ONLY. **DRA
 
 **On-top distinctness:** Finite starts and adaptive retry/defer distinguish S3 from fixed parallelism.
 
-**Source ambiguity / rights blockers:** Demand and utility unknown; direct worktree scope only; fork Issues disabled and PAUSE.
+**Source ambiguity / rights blockers:** Demand and utility unknown; direct worktree scope only; fork Issues disabled; explicit owner RESUME recorded, ACTIVE/ALLOW.
 
 
 ## 3. Minimal complete S3 first-party C construction
@@ -96,7 +96,7 @@ Human [issue.md](issue.md); canonical [roadmap.md](roadmap.md). PLAN_ONLY. **DRA
 
 **Cost status:** NOT_MEASURED.
 
-**Next permitted action:** Independent review; RESUME and separate authorization for effects.
+**Next permitted action:** Independent review; separate exact authorization for external effects.
 
 **Human backlink:** [issue.md](issue.md).
 

@@ -33,7 +33,7 @@
 - Validation state: NOT_RUN
 - Proposal falsifier: Equivalent first-party closure, actor-independent allocation, no outcome-sensitive effect or a direct worktree launch bypass.
 ## Rights and authority
-MIT; no tracked CLA/DCO/AI policy found, not legal certification. Live original Issues/pulls state=all empty. Matching fork verified exact parent and main HEAD, push rights; Issues disabled. Bootstrap DORMANT/PAUSE outside #58 activation; no ongoing RESUME or public consent. Operator retains immutable caps and scope, no merge right.
+MIT; no tracked CLA/DCO/AI policy found, not legal certification. Live original Issues/pulls state=all empty. Matching fork verified exact parent and main HEAD, push rights; Issues disabled. Initially DORMANT/PAUSE outside #58 activation; explicit owner RESUME 2026-11-26, ACTIVE/ALLOW; exact publication approval remains separate. Operator retains immutable caps and scope, no merge right.
 ## Existing work / overlap
 SHIPPED: [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L122), [worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545), isolation and report text. No competing issue/PR returned. Manual waves or fixed cap are alternatives, not adaptive allocation.
 ## Function ownership
@@ -60,4 +60,12 @@ Matched manual waves vs actor, same tasks/limits; compare completion, interventi
 - Result: PLAN_ONLY
 - External issue: DRAFT — NOT PUBLISHED
 - Fork issue: NOT PUBLISHED, disabled.
-- Case: .opensiro/issues/worktree-commitment-control-s3-20261125/; no product changes or contribution record; further effects require RESUME and exact consent.
+- Case: .opensiro/issues/worktree-commitment-control-s3-20261125/; no product changes or contribution record; external posting requires exact final consent.
+
+- Publication review source HEAD: 4563935c87c4e22514a6ee3842fc51fc34ebe2fb
+- Publication review action: original_issue
+- Publication review destination: https://github.com/dmoka/mini-harness
+- Publication review title SHA256: 142aaeee9d331bdd70021271edc128b62857d86dfca2c99f78b25b3e63459824
+- Publication review history SHA256: 4be6d6cf95125e96e85456d1560a003b68f3581b72355eb2f2599f0167c9f674
+- Publication review resolution: NEW_DISTINCT_OUTCOME
+- Publication review rationale: Bounded original Issue/PR search, selected verified fork and named archive ledgers returned no prior publication or native overlap beyond shipped [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L148) and [worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545). Original HEAD and accepted assessment unchanged; no maintainer feedback available. Distinct hypothetical outcome: delegate choice of next direct worktree start or retry under fixed operator limits with actual outcome feedback instead of manual waves; fixed caps alone do not provide discretionary allocation. No claim of achieved benefit or exhaustive global novelty. New Issue recommended subject to owner decision, native Blank Issue verified and exact final consent.

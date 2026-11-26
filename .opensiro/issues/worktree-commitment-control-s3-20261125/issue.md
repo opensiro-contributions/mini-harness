@@ -107,7 +107,7 @@ Matched manual waves vs actor, same caps/tasks; completion, interventions, engin
 
 **Agent/developer handoff:** [constructor-sufficiency.md](constructor-sufficiency.md) and [roadmap.md](roadmap.md).
 
-**Rights and publication:** MIT; no tracked CLA/DCO/AI policy found, not legal certification. Live original Issues/pulls state=all empty. Matching fork verified exact parent and main HEAD, push rights; Issues disabled. Bootstrap DORMANT/PAUSE outside #58 activation; no ongoing RESUME or public consent.
+**Rights and publication:** MIT; no tracked CLA/DCO/AI policy found, not legal certification. Live original Issues/pulls state=all empty. Matching fork verified exact parent and main HEAD, push rights; Issues disabled. Initially DORMANT/PAUSE; explicit owner RESUME 2026-11-26, ACTIVE/ALLOW. Separate exact publication consent remains.
 
 **AI disclosure:** AI-assisted; no native tests or independent human review presumed.
 
