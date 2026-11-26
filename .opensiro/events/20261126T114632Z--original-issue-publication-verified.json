@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "20261126T114632Z--original-issue-publication-verified",
+  "recorded_at": "2026-11-26T11:46:32Z",
+  "actor": "OpenSiro AI executor via Siro VM",
+  "kind": "PUBLICATION_VERIFIED",
+  "decision": "ORIGINAL_ISSUE_PUBLISHED",
+  "case_id": "worktree-commitment-control-s3-20261125",
+  "original_issue_url": "https://github.com/dmoka/mini-harness/issues/1",
+  "title_sha256": "142aaeee9d331bdd70021271edc128b62857d86dfca2c99f78b25b3e63459824",
+  "body_sha256": "9c97d457db39b3eec2d112d7ccfcfce46b62570bb2337d229eed9ce3e59a109b",
+  "approved_case_ref": "c673f84db41f774be3637e008c90c1c04051dcca",
+  "source_head": "4563935c87c4e22514a6ee3842fc51fc34ebe2fb",
+  "provider_author": "xLagerFeuer",
+  "provider_state": "open",
+  "evidence_urls": [
+    "https://github.com/dmoka/mini-harness/issues/1"
+  ],
+  "next_action": "Observe maintainer feedback; no implementation or additional public communication authorized"
+}
