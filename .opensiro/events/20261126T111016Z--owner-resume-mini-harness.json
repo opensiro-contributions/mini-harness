@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "20261126T111016Z--owner-resume-mini-harness",
+  "recorded_at": "2026-11-26T11:10:16Z",
+  "actor": "OpenSiro owner (operator command in current conversation)",
+  "kind": "DECISION",
+  "decision": "RESUME",
+  "case_id": "worktree-commitment-control-s3-20261125",
+  "evidence_urls": [
+    "https://github.com/opensiro-contributions/mini-harness/commit/0e90bb34f5c9adaff49ed5e5855ed69a9e1387d9"
+  ],
+  "next_action": "Prepare and validate original Issue; separate exact external publication gate remains",
+  "previous_attention": "DORMANT",
+  "previous_owner_control": "PAUSE",
+  "attention": "ACTIVE",
+  "owner_control": "ALLOW"
+}

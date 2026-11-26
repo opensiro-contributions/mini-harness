@@ -2,8 +2,8 @@
   "schema_version": 1,
   "original_repository": "dmoka/mini-harness",
   "working_fork": "opensiro-contributions/mini-harness",
-  "attention": "DORMANT",
-  "owner_control": "PAUSE",
-  "last_event_id": "20261125T191800Z--mini-harness-roadmap-bootstrap",
-  "updated_at": "2026-11-25T19:18:00Z"
+  "attention": "ACTIVE",
+  "owner_control": "ALLOW",
+  "last_event_id": "20261126T111016Z--owner-resume-mini-harness",
+  "updated_at": "2026-11-26T11:10:16Z"
 }
