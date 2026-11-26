@@ -1,0 +1,1 @@
+Proposal: outcome-aware worktree resource allocation for mini-harness — Opensiro VSM architecture review
