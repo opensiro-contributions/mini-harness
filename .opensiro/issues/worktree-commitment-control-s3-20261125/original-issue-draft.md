@@ -4,7 +4,7 @@
 
 We propose an optional allocation policy for direct worktree subagents, keeping the existing fork-join behavior as the default.
 
-**What exists today:** [Parallel dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L148) and [worktree execution](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545) support isolated coding children and branch reports.
+**What exists today:** [Parallel dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L112-L148) and [worktree execution](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L532-L545) support isolated coding children and branch reports.
 
 **What may be missing:** A developer-composable allocator that chooses which pending child to start, defer or retry under operator-set concurrent-slot and total-start limits, then reallocates based on actual subprocess and Git commit outcomes.
 
@@ -16,20 +16,20 @@ We propose an optional allocation policy for direct worktree subagents, keeping 
 
 We use the Viable System Model (VSM) to examine organizational functions and decision ownership, not product quality, safety or maturity.
 
-**Historical assessment:** [Accepted Index assessment](https://github.com/opensiro/vsm-harness-index/blob/7abafd36dd9216d94e795dac9e6030bc0e8e56a6/assessments/dm/dmoka-mini-harness.md); Index commit 7abafd36dd9216d94e795dac9e6030bc0e8e56a6; assessment blob 3513c706a289b150a9b0567b39771b8e4104ddb1; reviewed 2026-11-24; review_ref 4563935c87c4e22514a6ee3842fc51cf34ebe2fb; Profile 0.2.4; Skills Methodology 0.3.8.
+**Historical assessment:** [Accepted Index assessment](https://github.com/opensiro/vsm-harness-index/blob/7abafd36dd9216d94e795dac9e6030bc0e8e56a6/assessments/dm/dmoka-mini-harness.md); Index commit 7abafd36dd9216d94e795dac9e6030bc0e8e56a6; assessment blob 3513c706a289b150a9b0567b39771b8e4104ddb1; reviewed 2026-11-24; review_ref 4563935c87c4e22514a6ee3842fc51fc34ebe2fb; Profile 0.2.4; Skills Methodology 0.3.8.
 
 **Boundary:** Local Python coding-agent runtime, SDK and Claude CLI backends, act/chat/plan modes and direct operational children; external model internals and maintainer governance excluded.
 
-**Current original HEAD:** [4563935c87c4e22514a6ee3842fc51cf34ebe2fb](https://github.com/dmoka/mini-harness/commit/4563935c87c4e22514a6ee3842fc51cf34ebe2fb), observed 2026-11-26.
+**Current original HEAD:** [4563935c87c4e22514a6ee3842fc51fc34ebe2fb](https://github.com/dmoka/mini-harness/commit/4563935c87c4e22514a6ee3842fc51fc34ebe2fb), observed 2026-11-26.
 
 | Key | Organizational function | Historical state | Evidence or limitation |
 | --- | --- | --- | --- |
-| **S1 · Operations** | Doing the actual work | A | [Model loop](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L85-L148) selects actions and completion. |
-| **S2 · Coordination** | Reducing interference between operations | A | [Child execution](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L510-L545) enables model-selected isolated worktrees. |
+| **S1 · Operations** | Doing the actual work | A | [Model loop](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L85-L148) selects actions and completion. |
+| **S2 · Coordination** | Reducing interference between operations | A | [Child execution](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L510-L545) enables model-selected isolated worktrees. |
 | **S3 · Current management** | Allocating current resources and commitments | — | Parallel dispatch and join do not evidence a dedicated autonomous allocation loop. |
-| **S3* · Independent audit** | Independently checking operations and returning corrective feedback | — | [Hooks](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L566-L609) and fresh contexts do not establish an independent audit loop. |
-| **S4 · Future adaptation** | Exploring future change and returning adaptation options | — | [Local memory](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L297-L429) is not evidence of strategic adaptation. |
-| **S5 · Identity and policy** | Resolving ultimate policy and authority | — | [Plan approval](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L491-L503) is not evidence of autonomous system-level policy ownership. |
+| **S3* · Independent audit** | Independently checking operations and returning corrective feedback | — | [Hooks](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L566-L609) and fresh contexts do not establish an independent audit loop. |
+| **S4 · Future adaptation** | Exploring future change and returning adaptation options | — | [Local memory](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L297-L429) is not evidence of strategic adaptation. |
+| **S5 · Identity and policy** | Resolving ultimate policy and authority | — | [Plan approval](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L491-L503) is not evidence of autonomous system-level policy ownership. |
 
 - `A`: autonomous decision and feedback closure in a supported first-party mode.
 - `C`: first-party construction path requiring developer composition of the autonomous actor, authority or closure.

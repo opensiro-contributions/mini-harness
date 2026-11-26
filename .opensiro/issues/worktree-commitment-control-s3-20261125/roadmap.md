@@ -2,17 +2,17 @@
 ## Identity and pins
 - Receipt contract: proposal-gate
 - Original repository: dmoka/mini-harness
-- Original HEAD: 4563935c87c4e22514a6ee3842fc51cf34ebe2fb
+- Original HEAD: 4563935c87c4e22514a6ee3842fc51fc34ebe2fb
 - Observed at: 2026-11-25
 - Accepted Index assessment: https://github.com/opensiro/vsm-harness-index/blob/7abafd36dd9216d94e795dac9e6030bc0e8e56a6/assessments/dm/dmoka-mini-harness.md
 - Accepted assessment blob SHA: 3513c706a289b150a9b0567b39771b8e4104ddb1
-- Accepted review ref: 4563935c87c4e22514a6ee3842fc51cf34ebe2fb
+- Accepted review ref: 4563935c87c4e22514a6ee3842fc51fc34ebe2fb
 - Accepted reviewed at: 2026-11-24
 - Index corpus pin: 7abafd36dd9216d94e795dac9e6030bc0e8e56a6
 - Profile version: 0.2.4
 - Assessment procedure version: 0.3.8
 - System in focus: local coding runtime and direct worktree children.
-- Repository-wide source map: [Runtime](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py), [README](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/README.md), both backends, tests, requirements, license and full tracked tree inspected. No CI/contributor/Issue templates. Local parent Session and direct worktree children in act/chat; plan/consolidation reviewed. External model internals and maintainer governance excluded.
+- Repository-wide source map: [Runtime](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py), [README](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/README.md), both backends, tests, requirements, license and full tracked tree inspected. No CI/contributor/Issue templates. Local parent Session and direct worktree children in act/chat; plan/consolidation reviewed. External model internals and maintainer governance excluded.
 - Accepted VSM vector: S1=A · S2=A · S3=— · S3*=— · S4=— · S5=—
 - S1 disposition: Model loop selects actions and completion; ALREADY_A.
 - S2 disposition: Worktree isolation and join; ALREADY_A.
@@ -35,7 +35,7 @@
 ## Rights and authority
 MIT; no tracked CLA/DCO/AI policy found, not legal certification. Live original Issues/pulls state=all empty. Matching fork verified exact parent and main HEAD, push rights; Issues disabled. Initially DORMANT/PAUSE outside #58 activation; explicit owner RESUME 2026-11-26, ACTIVE/ALLOW; exact publication approval remains separate. Operator retains immutable caps and scope, no merge right.
 ## Existing work / overlap
-SHIPPED: [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L122), [worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545), isolation and report text. No competing issue/PR returned. Manual waves or fixed cap are alternatives, not adaptive allocation.
+SHIPPED: [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L112-L122), [worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L532-L545), isolation and report text. No competing issue/PR returned. Manual waves or fixed cap are alternatives, not adaptive allocation.
 ## Function ownership
 HYPOTHETICAL: two pending direct children compete for one slot and two starts; A fails, actor chooses B or retry A. Operator fixes limits; actor decides; runtime enforces and returns actual outcome. Children retain task discretion.
 ## Capability priority
@@ -68,4 +68,4 @@ Matched manual waves vs actor, same tasks/limits; compare completion, interventi
 - Publication review title SHA256: 142aaeee9d331bdd70021271edc128b62857d86dfca2c99f78b25b3e63459824
 - Publication review history SHA256: 4be6d6cf95125e96e85456d1560a003b68f3581b72355eb2f2599f0167c9f674
 - Publication review resolution: NEW_DISTINCT_OUTCOME
-- Publication review rationale: Bounded original Issue/PR search, selected verified fork and named archive ledgers returned no prior publication or native overlap beyond shipped [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L148) and [worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545). Original HEAD and accepted assessment unchanged; no maintainer feedback available. Distinct hypothetical outcome: delegate choice of next direct worktree start or retry under fixed operator limits with actual outcome feedback instead of manual waves; fixed caps alone do not provide discretionary allocation. No claim of achieved benefit or exhaustive global novelty. New Issue recommended subject to owner decision, native Blank Issue verified and exact final consent.
+- Publication review rationale: Bounded original Issue/PR search, selected verified fork and named archive ledgers returned no prior publication or native overlap beyond shipped [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L112-L148) and [worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L532-L545). Original HEAD and accepted assessment unchanged; no maintainer feedback available. Distinct hypothetical outcome: delegate choice of next direct worktree start or retry under fixed operator limits with actual outcome feedback instead of manual waves; fixed caps alone do not provide discretionary allocation. No claim of achieved benefit or exhaustive global novelty. New Issue recommended subject to owner decision, native Blank Issue verified and exact final consent.

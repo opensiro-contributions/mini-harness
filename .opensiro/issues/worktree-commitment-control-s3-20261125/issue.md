@@ -19,9 +19,9 @@ Research reusable VSM constructs, not proven cost reduction or mandatory archite
 
 > ACCEPTED HISTORICAL INDEX — not current-HEAD grades
 > S1=A · S2=A · S3=— · S3*=— · S4=— · S5=—
-> [Accepted assessment](https://github.com/opensiro/vsm-harness-index/blob/7abafd36dd9216d94e795dac9e6030bc0e8e56a6/assessments/dm/dmoka-mini-harness.md); 2026-11-24; review_ref 4563935c87c4e22514a6ee3842fc51cf34ebe2fb; blob 3513c706a289b150a9b0567b39771b8e4104ddb1; Profile 0.2.4 / Methodology 0.3.8.
+> [Accepted assessment](https://github.com/opensiro/vsm-harness-index/blob/7abafd36dd9216d94e795dac9e6030bc0e8e56a6/assessments/dm/dmoka-mini-harness.md); 2026-11-24; review_ref 4563935c87c4e22514a6ee3842fc51fc34ebe2fb; blob 3513c706a289b150a9b0567b39771b8e4104ddb1; Profile 0.2.4 / Methodology 0.3.8.
 
-**Repository-wide audit:** [Runtime](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py), [README](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/README.md), both backends, tests, requirements, license and full tracked tree inspected. No CI/contributor/Issue templates. Local parent Session and direct worktree children in act/chat; plan/consolidation reviewed. External model internals and maintainer governance excluded.
+**Repository-wide audit:** [Runtime](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py), [README](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/README.md), both backends, tests, requirements, license and full tracked tree inspected. No CI/contributor/Issue templates. Local parent Session and direct worktree children in act/chat; plan/consolidation reviewed. External model internals and maintainer governance excluded.
 
 
 | Function | Historical | Current owner/closure | Priority |
@@ -49,7 +49,7 @@ A autonomous; C first-party developer-composable autonomous owner; P parent-gove
 
 **Proposed C capability (P0):** Opt-in Session-level autonomous allocator of direct worktree commitments within operator-set slot and total-start limits, enforcing grants and reallocating after actual outcomes.
 
-**Best native operator alternative:** Manual waves or prompt splitting; [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L122).
+**Best native operator alternative:** Manual waves or prompt splitting; [dispatch](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L112-L122).
 
 **Expected user benefit:** HYPOTHETICAL: delegate allocation without editing dispatch or manual prompt splitting.
 
@@ -66,7 +66,7 @@ A autonomous; C first-party developer-composable autonomous owner; P parent-gove
 | --- | --- | --- |
 | State | Calls/join | Pending/running/outcomes and grants |
 | Owner | Parent proposes tasks | Composed allocator |
-| Effect | [Worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545) | Gate and actual outcome return |
+| Effect | [Worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L532-L545) | Gate and actual outcome return |
 **Distinctness and falsifier:** Equivalent first-party closure, actor-independent allocation, no outcome-sensitive effect or a direct worktree launch bypass.
 
 

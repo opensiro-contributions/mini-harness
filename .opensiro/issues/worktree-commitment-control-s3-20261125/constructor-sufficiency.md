@@ -2,7 +2,7 @@
 Human [issue.md](issue.md); canonical [roadmap.md](roadmap.md). PLAN_ONLY. **DRAFT — NOT PUBLISHED**.
 
 ## 1. Function-specific construction boundary and methodology checks
-**Source and mode boundary:** [Runtime](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py), [README](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/README.md), both backends, tests, requirements, license and full tracked tree inspected. No CI/contributor/Issue templates. Local parent Session and direct worktree children in act/chat; plan/consolidation reviewed. External model internals and maintainer governance excluded.
+**Source and mode boundary:** [Runtime](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py), [README](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/README.md), both backends, tests, requirements, license and full tracked tree inspected. No CI/contributor/Issue templates. Local parent Session and direct worktree children in act/chat; plan/consolidation reviewed. External model internals and maintainer governance excluded.
 
 **Target transition:** S3=— -> S3=C
 
@@ -18,7 +18,7 @@ Human [issue.md](issue.md); canonical [roadmap.md](roadmap.md). PLAN_ONLY. **DRA
 
 
 ## 2. Source-pinned baseline and parallel native Track A / on-top Track B
-**Original native workflow:** [run_tool_calls](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L122) uses ThreadPoolExecutor.map; [run_in_worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545) runs child, attempts commit, returns branch/report. Single/mixed calls use call_tool.
+**Original native workflow:** [run_tool_calls](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L112-L122) uses ThreadPoolExecutor.map; [run_in_worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L532-L545) runs child, attempts commit, returns branch/report. Single/mixed calls use call_tool.
 
 **Closest existing solution:** Manual waves or static pool, no dedicated allocation feedback.
 
@@ -44,9 +44,9 @@ Human [issue.md](issue.md); canonical [roadmap.md](roadmap.md). PLAN_ONLY. **DRA
 
 | Port | Source | Edit | Owner and effect |
 | --- | --- | --- | --- |
-| Session | [Session](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L71-L83) | Optional trusted actor, immutable limits, ledger | Operator defines scope; actor sees snapshot |
-| Dispatch | [call_tool](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L112-L148) | Gate all direct starts; as-completed callback | Actor chooses grant; runtime enforces |
-| Outcome | [run_in_worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/agent.py#L532-L545) | Actual exit/commit status, branch and original ID | Outcome returned before next choice |
+| Session | [Session](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L71-L83) | Optional trusted actor, immutable limits, ledger | Operator defines scope; actor sees snapshot |
+| Dispatch | [call_tool](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L112-L148) | Gate all direct starts; as-completed callback | Actor chooses grant; runtime enforces |
+| Outcome | [run_in_worktree](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/agent.py#L532-L545) | Actual exit/commit status, branch and original ID | Outcome returned before next choice |
 
 **Architectural C-sufficiency argument:** Trusted Session factory composes autonomous actor (e.g. model-backed); actor reads pending/running/outcomes and remaining slots/credits, chooses start/defer/close or retry with new credit. Runtime serializes grants, rejects invalid/stale IDs, reserves slot and counts start at launch, releases slot on actual outcome and invokes actor again. No valid grant means defer with explicit original tool IDs. Gate single/mixed calls too; block nested worktree starts even after load_tools in controlled children. Arbitrary shell processes outside scope. Preserve plan/permissions and disabled baseline. No right to raise cap, change goal, merge or preempt. Static pool or generic hook lacks this complete loop.
 
@@ -66,7 +66,7 @@ Human [issue.md](issue.md); canonical [roadmap.md](roadmap.md). PLAN_ONLY. **DRA
 
 
 ## 5. Future source-native acceptance — derive tests, do not copy a matrix
-**Native test commands and entry points:** README pytest -q; [tests/test_agent.py](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51cf34ebe2fb/tests/test_agent.py#L167-L205) covers subagents and worktrees. Extend fake model/temp Git. NOT_RUN.
+**Native test commands and entry points:** README pytest -q; [tests/test_agent.py](https://github.com/dmoka/mini-harness/blob/4563935c87c4e22514a6ee3842fc51fc34ebe2fb/tests/test_agent.py#L167-L205) covers subagents and worktrees. Extend fake model/temp Git. NOT_RUN.
 
 **Positive functional closure:** A fails then B starts under one slot/two credits; actual launch and result IDs.
 
